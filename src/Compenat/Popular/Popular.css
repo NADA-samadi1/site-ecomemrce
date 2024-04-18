@@ -1,0 +1,48 @@
+/* Default styles for large screens */
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 90vh;
+}
+
+.popular h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 10vh;
+}
+
+.popular hr {
+    width: 200px;
+    height: 7px;
+    border: solid #FF4141;
+    border-radius: 10px;
+}
+
+.popular-item {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+}
+
+/* Media query for medium-sized screens */
+@media (max-width: 992px) {
+    .popular h1 {
+        font-size: 40px;
+        margin-top: 8vh;
+    }
+
+    .popular-item {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center;
+    }
+}
+
+/* Media query for small screens */
+@media (max-width: 576px) {
+    .popular h1 {
+        font-size: 30px;
+        margin-top: 6vh;
+    }
+}

@@ -1,0 +1,25 @@
+.offers {
+    width: 80%;
+    height: 64vh;
+    display: flex;
+    margin: auto;
+    padding: 0 20px; /* Adjust padding for responsiveness */
+    margin-top: 100px;
+    
+}
+.offre h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 10vh;
+    margin-left: 840px;
+}
+
+.offre hr {
+    width: 200px;
+    height: 7px;
+    border: solid #FF4141;
+    border-radius: 10px;
+    margin-left: 840px;
+}
+
+

@@ -1,0 +1,43 @@
+
+
+span{
+    margin-left: 30px;
+   padding-top: 100px;
+   color: rgb(210, 72, 95);
+   font-size: 30px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.navLink hr{
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background: rgb(243, 12, 12);
+}
+.navLink :hover{
+    transform: scale(1.2);
+}
+
+
+/* Media Query for smaller screens */
+@media (max-width: 576px) {
+    .nav-count {
+        margin-top: 4px; /* Adjust margin for smaller screens */
+        margin-left: -8px; /* Adjust margin for smaller screens */
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Add more media queries as needed for different screen sizes */
+/* Ajoutez ce style pour la balise <hr /> dans votre fichier CSS */
+
+.navbar-hr {
+    border: none;
+    height: 2px;
+   
+    background-color: #444141; /* Couleur de fond de la ligne */
+    margin-top: 8px; /* Espace au-dessus de la ligne */
+    margin-bottom: 10px;}
+  

@@ -1,0 +1,74 @@
+.newsletter {
+    width: 65%;
+    height: auto; /* Adjusted height to be flexible */
+    min-height: 40vh; /* Minimum height for smaller screens */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 0px 20px; /* Adjusted padding for smaller screens */
+    margin-bottom: 50px; /* Adjusted margin for smaller screens */
+    background: linear-gradient(180deg, #7b7a7b 0%, #e1ffea22 60%);
+    gap: 20px; /* Adjusted gap for smaller screens */
+}
+
+.newsletter h1 {
+    color: #454545;
+    font-size: 35px; /* Adjusted font size for smaller screens */
+    font-weight: 500;
+    margin-top: 30px; /* Adjusted margin for smaller screens */
+}
+
+.newsletter p {
+    color: #454545;
+    font-size: 16px; /* Adjusted font size for smaller screens */
+}
+
+.newsletter div {
+    display: flex;
+    flex-direction: column; /* Adjusted flex direction for smaller screens */
+    align-items: center;
+    background: white;
+    width: 100%; /* Adjusted width for smaller screens */
+    max-width: 500px; /* Maximum width for larger screens */
+    border-radius: 20px;
+    border: 1px solid #e3e3e3;
+}
+
+.newsletter input {
+    width: 100%; /* Adjusted width for smaller screens */
+    max-width: 400px; /* Maximum width for larger screens */
+    margin: 15px 0; /* Adjusted margin for smaller screens */
+    padding: 15px; /* Added padding for better input appearance */
+    border: none;
+    outline: none;
+    color: #616161;
+    font-family: Poppins;
+    font-size: 16px;
+}
+
+.newsletter div button {
+    width: 100%; /* Adjusted width for smaller screens */
+    max-width: 300px; /* Maximum width for larger screens */
+    height: 60px; /* Adjusted height for smaller screens */
+    border-radius: 20px;
+    background: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Media Queries for Responsive Design */
+
+@media only screen and (max-width: 768px) {
+    .newsletter {
+        width: 85%;
+        padding: 0px 10px;
+    }
+
+    .newsletter h1 {
+        font-size: 28px;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,88 @@
+.hero {
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right -300px;
+    padding: 0 40px; /* Adjusted padding for smaller screens */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    transition: background-image 0.5s ease;
+}
+
+.hero-left {
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 20px; */
+    padding-left: 20px; /* Adjusted padding for smaller screens */
+    line-height: 1.1;
+    margin-top: 50px; /* Adjusted margin for smaller screens */
+    margin-left: -20px; /* Adjusted margin for smaller screens */
+}
+
+.hero-left h2 {
+    color: #090009;
+    font-size: 40px; /* Adjusted font size for smaller screens */
+    font-weight: 600;
+    margin-left: 70px;
+}
+
+.hero-left p {
+    color: #171717;
+    font-size: 80px; /* Adjusted font size for smaller screens */
+    font-weight: 650;
+    margin-left: 70px;
+}
+
+.hero-lastest-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Adjusted gap for smaller screens */
+    width: 250px; /* Adjusted width for smaller screens */
+    height: 70px; /* Adjusted height for smaller screens */
+    border-radius: 50px; /* Adjusted border-radius for smaller screens */
+    margin-top: 10px; /* Adjusted margin for smaller screens */
+    background: #ff4141;
+    color: white;
+    font-size: 18px; /* Adjusted font size for smaller screens */
+    font-weight: 500;
+    margin-left: 70px;
+}
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Media Queries for Responsive Design */
+
+@media only screen and (max-width: 768px) {
+    .hero {
+        padding: 0 20px; /* Further adjusted padding for smaller screens */
+    }
+
+    .hero-left {
+        padding-left: 10px; /* Further adjusted padding for smaller screens */
+        margin-top: 30px; /* Further adjusted margin for smaller screens */
+        margin-left: 0; /* Adjusted margin for smaller screens */
+    }
+
+    .hero-left h2 {
+        font-size: 18px; /* Further adjusted font size for smaller screens */
+    }
+
+    .hero-left p {
+        font-size: 40px; /* Further adjusted font size for smaller screens */
+    }
+
+    .hero-lastest-btn {
+        width: 200px; /* Further adjusted width for smaller screens */
+        height: 40px; /* Further adjusted height for smaller screens */
+        font-size: 16px; /* Further adjusted font size for smaller screens */
+    }
+}

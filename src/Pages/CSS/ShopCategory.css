@@ -1,0 +1,81 @@
+/* Style.css */
+
+/* Styles par défaut */
+.shopcategory-banner {
+    display: block;
+    margin: 30px auto;
+    width: 62%;
+    /* height: 100%; */
+}
+
+.shopcategory-idexSort {
+    display: flex;
+    margin: 0px 5%; /* Utilisation de marges en pourcentage pour être plus adaptable */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shopcategory-sort {
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 1px solid #888;
+}
+
+.shopcategory-idexSort p span {
+    font-weight: 600;
+}
+
+.shopcategory-product {
+    /* margin: 30px 7%; */
+     /* Utilisation de marges en pourcentage pour être plus adaptable */
+    display: grid;
+    /* margin-left: 200px; */
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+   margin-left: 60px;
+   
+    
+    /* row-gap: 30px; Réduction de l'espacement entre les éléments */
+}
+
+/* Media Query pour les écrans de taille moyenne (tablette) */
+.shopcategory-loadmore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 650px;
+    margin-top: 80px;
+    width: 233px;
+    height: 69px;
+    border-radius: 75px;
+    background: #ededed;
+    color: #787878;
+    font-size: 18px;
+    font-weight: 500;
+
+
+}
+
+@media (max-width: 992px) {
+    .shopcategory-idexSort {
+        margin: 0px 2%; /* Ajustement des marges pour les écrans de taille moyenne */
+    }
+
+    .shopcategory-product {
+        grid-template-columns: 1fr ; /* Réduire le nombre de colonnes pour s'adapter à l'écran de taille moyenne */
+        row-gap: 20px;
+         /* Réduction de l'espacement entre les éléments */
+    }
+}
+
+/* Media Query pour les écrans de petite taille (téléphone) */
+@media (max-width: 576px) {
+    .shopcategory-idexSort {
+        flex-direction: column; /* Alignement vertical pour les écrans de petite taille */
+        align-items: flex-start; /* Alignement au début de la colonne */
+    }
+
+    .shopcategory-sort {
+        margin-top: 10px; /* Ajustement de la marge pour les écrans de petite taille */
+    }
+}
